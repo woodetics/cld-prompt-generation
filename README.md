@@ -6,10 +6,25 @@ I built this because starting a big project with one vague paragraph usually mea
 
 ## What's in here
 
+- `.claude/skills/bigtask/`: the `/bigtask` skill (light, voice-friendly). `dist/bigtask.zip` is the same skill packaged for upload.
 - `PLAYBOOK.md`: the thing Claude reads. Triage, silent context scan, interview with a question checklist, read-back for approval, final prompt template, checks, handoff.
 - `KNOWLEDGE.md`: the research behind every rule, with source links and a confidence tag on each finding (some sources were blocked while researching, and those are marked).
 
-## How to use it
+## The /bigtask skill (the quick version)
+
+If you don't want a long questionnaire, use the skill. Type `/bigtask` (add a line about what you're doing if you like). Claude reads what it can see, then sends ONE open-ended message with up to four broad prompts. You can answer by voice and ramble in any order. Claude fills in the gaps itself, writes the full prompt, lists the assumptions it made, and suggests a couple of ideas beyond what you asked. It builds nothing until you say so.
+
+Install it:
+
+- Claude Code, this repo: it's already at `.claude/skills/bigtask/`.
+- Claude Code, every project: copy that folder to `~/.claude/skills/bigtask/`.
+- Claude app (claude.ai): upload `dist/bigtask.zip` under Settings, Capabilities, Skills.
+
+## The full playbook (the thorough version)
+
+Use `PLAYBOOK.md` when the task is high-stakes or you want the detailed, multiple-choice interview.
+
+## How to use the playbook
 
 1. Start a new chat or Claude Code session in the project.
 2. Say: `Read PLAYBOOK.md, then I want to build [thing].` (Or paste the Quick Start block at the bottom of the playbook.)
