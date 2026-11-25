@@ -1,11 +1,13 @@
 ---
 name: bigtask
-description: Use when the user types /bigtask or says they are starting a big task and want help writing the prompt. Asks a few open-ended, voice-friendly questions, fills the gaps itself, and writes one complete prompt before anything gets built.
+description: Use whenever the user writes "/bigtask" or "bigtask", or says they are starting a big project or task (an app, a research report, a content series, an automation, anything large or ambiguous) and wants help with the prompt. Asks a few open-ended, voice-friendly questions, fills the gaps itself, and writes one complete prompt before anything gets built. Works in chats, projects and Claude Code.
 ---
 
 # /bigtask
 
 The user is about to start something big and wants help turning a rough idea into a prompt that gets built right the first time. They often answer by voice dictation, so keep questions open-ended and few. Do the heavy lifting yourself.
+
+This works anywhere: a plain chat, a project, or Claude Code. Use whatever context exists where you are, and do not assume files or folders are there.
 
 ## Rule zero
 
@@ -13,7 +15,7 @@ Do not build, code, or start the work during this skill. The output is a prompt 
 
 ## Step 1. Read what you can (silently)
 
-If the user typed something after /bigtask, treat it as the opening description. Then look at whatever context you already have: files in the working folder, README or CLAUDE.md, attached documents, earlier messages. Do not ask about anything you can read.
+If the user typed something after /bigtask, treat it as the opening description. Then look at whatever context you already have: the conversation so far, attached files, project knowledge, saved memory about the user, and (in Claude Code) the working folder, README or CLAUDE.md. Do not ask about anything you can read or already know.
 
 If the task turns out to be small and clear, say so in one line and just do it. This skill is for big, ambiguous or expensive-to-redo work.
 
@@ -52,7 +54,7 @@ Present:
 
 Then ask one thing: "Does this match what you meant, or what is off?" Fix anything they point out.
 
-When they approve, offer to save it as PROMPT.md in the project (if there is a project folder) and say how to start: run it in a fresh session, or here if they prefer. For risky or very large work, suggest plan mode first. Do not start building unless they say to.
+When they approve, say how to start: paste the prompt into a fresh chat (or a new project) so it begins with clean context, or run it right here if they prefer. If file tools are available, offer to save it as PROMPT.md in the project. For risky or very large work in Claude Code, suggest plan mode first. Do not start building unless they say to.
 
 ## Reference
 

@@ -18,7 +18,7 @@ Install it:
 
 - Claude Code, this repo: it's already at `.claude/skills/bigtask/`.
 - Claude Code, every project: copy that folder to `~/.claude/skills/bigtask/`.
-- Claude app (claude.ai): upload `dist/bigtask.zip` under Settings, Capabilities, Skills.
+- Claude app (claude.ai), for ALL your chats: upload `dist/bigtask.zip` in your skills settings (Settings, then Capabilities or Customize, then Skills; the menu name moves around) and switch it on. After that it's available in every new chat. Say "/bigtask" or "bigtask" plus a line about what you're starting. In a plain chat it can't see your files, so it works from the conversation, attachments and project knowledge.
 
 ## The full playbook (the thorough version)
 

@@ -1,6 +1,6 @@
 # Prompt template and gap-filling checklist
 
-Used by the bigtask skill. Condensed from PLAYBOOK.md in the same repo (research and sources are in KNOWLEDGE.md).
+Used by the bigtask skill. Condensed from a researched playbook on Anthropic's prompting guidance and community practice.
 
 ## Gap-filling checklist (decide silently, flag as assumptions)
 
